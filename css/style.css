@@ -420,32 +420,44 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    body {
-        width: auto;
+    .main-container {
         padding: 0px;
-        margin: 0px;
     }
-
     .container-header {
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
+    #top-link {
+        width: 100%;
+    }
+
+    #top-link a{
+        flex: 1;
+        text-align: center;
+    }
+  
     #top-link a:hover{
-        border-bottom: solid 2px;
-        border-top-color: #0065FC;
+        border-bottom: 1px solid #0065FC;
+        border-top: none;
         cursor: auto;   
     }
 
-    #ma-recherche{
+    .titre-1 {
         display: flex;
-        font-weight: bold;
-        font-size: large;
-        text-align: center;
-        border: 2px solid #F2F2F2;
-        width: 220px;
+       
     }
 
+    .container-button {
+        width: 100%;
+    }
+
+    #icone-1 {
+        width: 80px;
+        height: 55px;
+    }
+    
     button {
        display: none;
     }
