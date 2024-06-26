@@ -114,7 +114,6 @@ button{
 /* Filtres */
 .filtre{
     display: flex;
-    /* align-items: center; */
     margin: 10px; 
 }
 .espacefiltre{
@@ -359,16 +358,16 @@ a {
 .container-footer {
     display: flex;
     background-color: #e4e2e2;
-    padding: 10px 10px; 
+    padding: 5px 5px; 
     flex-direction: row; 
-    margin-top: 50px; 
+    margin-top: 30px; 
     justify-content: space-around;
 }
 
 .section-footer {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 5px;
    
 }
 
@@ -421,15 +420,6 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-
-    .main-container {
-        width: 480px;
-    }
-
-    . {
-        box-sizing: border-box;
-    }
-
     body {
         width: auto;
         padding: 0px;
@@ -440,6 +430,13 @@ a {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
+    #top-link a:hover{
+        border-bottom: solid 2px;
+        border-top-color: #0065FC;
+        cursor: auto;   
+    }
+
     #ma-recherche{
         display: flex;
         font-weight: bold;
@@ -448,6 +445,7 @@ a {
         border: 2px solid #F2F2F2;
         width: 220px;
     }
+
     button {
        display: none;
     }
@@ -458,7 +456,7 @@ a {
         align-items:center;
         justify-content: space-around;
         background-color: #0065FC;
-        width:60px;
+        width:80px;
         height:55px;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px; 
@@ -467,24 +465,28 @@ a {
     }
 
     .filtre {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .filtre.margesfiltre {
         flex-wrap: wrap;
     }
+
     .hebergements-and-populaires {
         display: flex;
         justify-content: space-between;
         flex-direction: column-reverse;
         gap: 10px;
+        margin: auto;
     }
 
     .hebergements-and-populaires section {
-        background-color: var(--main-bg-color);
+        background-color: white;
         border-radius: 0px;
-        padding: 30px;
-        box-sizing: border-box;
-    }
-
-    .hebergements {
-        width: 100%;
+        /* padding: 30px; */
+        /* box-sizing: border-box; */
     }
 
     .hebergements-cards {
@@ -508,6 +510,7 @@ a {
     }
 
     .populaires-cards a {
+        background-color: #e4e2e2;
         width: 100%;
     }
 
