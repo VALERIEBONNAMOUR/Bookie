@@ -550,6 +550,14 @@ a {
         margin: 30px;
     }
 
+    .card-txt{
+        margin: 10px;
+    }
+
+    .hebergement-star{
+        margin: 10px;
+    }
+
     .hebergements {
         background-color: white !important;
     }
