@@ -45,6 +45,7 @@ header {
     background-color: white;
     padding: 10px 10px;   
 }
+
 .container-header {
     display: flex;
     flex-direction: row;
@@ -149,6 +150,7 @@ button{
     border-radius: 30PX;
     justify-content: space-around; 
     gap: 5px;
+    height: 25px;
 }
 .espacefiltre:hover{
     color: white;
@@ -459,6 +461,9 @@ a {
     .container-button {
         width: 100%;
         margin-bottom: 10px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
     }
 
     #icone-1 {
@@ -477,7 +482,6 @@ a {
         font-size: large;
         text-align: center;
         border: 2px solid #F2F2F2;
-        width: 220px;
     }
 
     #icone-2 {
@@ -499,10 +503,11 @@ a {
 /* filtres */
     .filtre-container{
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
-    margin: 10px; 
-}
-    .filtre {
+    grid-template-columns: repeat(2 , 160px);
+    margin:auto;
+    }
+
+    .filtre{
         display: flex;
         flex-direction: column;
         align-content: space-between;
@@ -532,22 +537,22 @@ a {
         display: flex;
         justify-content: space-between;
         flex-direction: column-reverse;
-        gap: 10px;
+        gap: 5px;
     }
 
     .hebergements-and-populaires section {
         background-color: var(--main-bg-color);
         border-radius: 0px;
-        padding: 0px;
         box-sizing: border-box;
     }
     .title-1{
-        margin-bottom: -15px;
+        margin: 0;
         padding: 5px;
     }
 
     .text-1{
-        margin: 30px;
+        margin: 20px;
+        padding-bottom: 30px;
     }
 
     .card-txt{
@@ -565,11 +570,13 @@ a {
     .hebergements-cards {
         display: flex;
         flex-direction: column;
+        gap: 25px;
+        align-items: center;
     }
 
     .hebergements a{
-        margin: 20px;
-        margin-bottom: -10px;
+        margin:auto;
+        width: 100%;
     }
     
     .populaires {
@@ -578,7 +585,8 @@ a {
     }
 
     .title-2{
-        margin-bottom: -25px;
+        margin: 0;
+        margin-bottom: -15px;
         padding: 5px;
     }
 
@@ -586,13 +594,17 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 30px;
-        width: 90%;
+        width: 100%;
+        align-items: center;
+    }
+
+    section{
+        padding: 20px;
     }
 
     .populaires-cards a {
         width: 100%;
-        margin: -10px;
+        margin: auto;
     }
 
     .populaires-cards .card-title {
