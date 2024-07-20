@@ -46,6 +46,13 @@ header {
     padding: 10px 10px;   
 }
 
+h1{
+    margin: 0;
+}
+
+.title-container p{
+    margin: 0;
+}
 .container-header {
     display: flex;
     flex-direction: row;
@@ -53,8 +60,8 @@ header {
 }
 
 #logo {
- width: 60px;
- height: 15px;
+
+ height: 19px;
  margin-top: 10px;
 }
 
@@ -117,6 +124,13 @@ button{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
+.filtre{
+    display: flex;
+    align-items: center;
+ 
+ 
+}
 /* Filtres */
 .filtre-container{
     display: flex;
@@ -139,19 +153,18 @@ button{
     font-weight: bold;
     color: black;
     margin: 0px;
+    font-size: 14px;
     
 }
 .iconesfiltre{
     display: flex;
     color: #0065FC;
     border: 3px solid #e4e2e2;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 15px;
+  
     border-radius: 30PX;
     justify-content: space-around; 
     gap: 5px;
-    height: 25px;
 }
 .espacefiltre:hover{
     color: white;
@@ -231,26 +244,25 @@ a {
 
 .hebergements {
     width: 65%;
-    display: grid; 
-    grid-template-columns: 3 2;
 }
 
 .hebergements-cards {
     display: flex;
-    margin-top: 10px;
+    margin-top: 66px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.hebergement-cards a{
-    width: 33%;
-    height: 150px; 
-    gap: 30px;
+.hebergements-cards a{
+    width: calc(33% - 30px);
+ 
 }
 
 .hebergements-cards img {
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 124px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     object-fit: cover;
@@ -265,7 +277,13 @@ a {
 .hebergement-star{
   display: flex; 
   align-items: baseline;
-  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.display-more{
+    display: flex;
+    align-items: center;
+    height: 100px;
 }
 
 /****** Populaires ***********/
@@ -305,7 +323,7 @@ a {
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.populaires-cards .card-subtitle, .hebergements-cards .card-subtitle {
     margin: 0;
 }
 
@@ -319,7 +337,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 }
 
 .section-title{
@@ -375,9 +393,9 @@ a {
 }
 
 .section-footer {
-    display: flex;
     margin-right: 150px;
     flex-direction: column;  
+    padding: 10px;
 }
 
 
@@ -438,11 +456,7 @@ a {
         gap: 20px;
     }
 
-    #logo {
-        width: 80px;
-        height: 19px;
-        margin-top: 10px;
-    }
+ 
        
     #top-link {
         width: 100%;
@@ -461,8 +475,8 @@ a {
 
     .container-button {
         width: 100%;
+        margin-top: 20px;
         margin-bottom: 10px;
-        margin: auto;
         display: flex;
         justify-content: center;
     }
@@ -482,6 +496,7 @@ a {
         font-weight: bold;
         font-size: large;
         text-align: center;
+        width: 100%;
         border: 2px solid #F2F2F2;
     }
 
@@ -504,14 +519,20 @@ a {
 /* filtres */
     .filtre-container{
         display: grid;
-        grid-template-columns: repeat(2 , 160px);
+        width: 100%;
+        grid-template-columns: repeat(2 , 50%);
         margin:auto;
     }
 
     .filtre{
-        display: flex;
+       align-items: baseline;
         flex-direction: column;
-        align-content: space-between;
+     
+     
+    }
+
+    .iconesfiltre {
+        padding: 5px;
     }
 
     .filtretitre{
@@ -552,7 +573,7 @@ a {
     }
 
     .text-1{
-        margin: 20px;
+        margin-top: 20px;
         padding-bottom: 30px;
     }
 
@@ -618,7 +639,7 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 10px;
+        gap: 20px;
     }
 
     .title-3{
